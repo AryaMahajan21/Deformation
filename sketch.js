@@ -18,7 +18,7 @@ function setup() {
   function draw() {
   background(255,255,255);
 
-/*if (wall.x - car.x < (car.width + wall.width/4)){
+if (if(wall.x-car.x < (car.width+wall.width)/2) )){
 car.velocityX = 0;
 var deformation = 0.5 * weight * speed * speed/22509;
 if (deformation>180){
@@ -31,8 +31,8 @@ if (deformation<180 && deformation > 100){
 if (deformation<100){
   car.shapeColor = color(0,255,0);
 }
-}*/
-if (car.isTouching(wall)){
+}
+/*if (car.isTouching(wall)){
   car.velocityX = 0;
 var deformation = 0.5 * weight * speed * speed/22509;
 if (deformation>180){
@@ -45,7 +45,7 @@ if (deformation<180 && deformation > 100){
 if (deformation<100){
   car.shapeColor = color(0,255,0);
 }
-}
+}*/
   drawSprites();
   fill("blue");
   ellipse(car.x - 25,220,30);
